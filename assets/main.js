@@ -11,6 +11,7 @@ async function updateSummary() {
 
 async function getTicketConvo() {
   const ticketConvo = await client.get("ticket.conversation");
+  console.log(ticketConvo["ticket.conversation"])
   return JSON.stringify(ticketConvo["ticket.conversation"]);
 }
 
